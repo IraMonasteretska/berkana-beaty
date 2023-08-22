@@ -1,0 +1,117 @@
+.breadcrumbs {
+    text-align: center;
+    padding: 20px 0;
+
+    span {
+        color: #212121;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+
+        a {
+            color: #9B9B9B;
+            line-height: 130%;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            transition: .3s;
+
+            &:hover {
+                color: #212121;
+            }
+
+            &:after {
+                content: '/';
+                display: inline-block;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%;
+                color: #9B9B9B;
+                margin: 0 2px 0 5px;
+            }
+        }
+    }
+}
+
+.brendspage {
+    padding: 60px 0 10px;
+}
+
+.brendspage__category {
+    margin-bottom: 40px;
+
+    h3 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .col-xl-3 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .row {
+        margin: 0 -20px;
+    }
+}
+
+.brendspage__category-item {
+    a {
+        margin-bottom: 40px;
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #FFF;
+        box-shadow: 0px 0.8571428656578064px 10px 0px rgba(0, 0, 0, 0.10);
+        height: 110px;
+        width: 100%;
+
+        img {
+            transition: .5s;
+            filter: grayscale(100%);
+            opacity: 0.4;
+        }
+
+        &:hover img {
+            filter: initial;
+            opacity: 1;
+        }
+    }
+}
+
+// ADAPTIVE ------------
+
+
+@media (max-width: 767.8px) {
+    .brendspage__category .col-xl-3 {
+        padding-right: calc(var(--bs-gutter-x) * 0.5);
+        padding-left: calc(var(--bs-gutter-x) * 0.5);
+    }
+
+    .brendspage__category-item a {
+        margin-bottom: 25px;
+    }
+
+    .brendspage {
+        padding: 40px 0 10px;
+    }
+
+    .about__brands-section {
+        margin-bottom: 25px;
+    }
+
+    .brendspage__category .row {
+        margin: 0;
+    }
+}
+
+@media (max-width: 575.8px) {
+    .brendspage {
+        padding: 20px 0 0px;
+    }
+}
